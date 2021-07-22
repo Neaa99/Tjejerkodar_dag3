@@ -1,0 +1,100 @@
+/* Styling för hela sidan */
+body {
+  margin: 10%;
+  background-image: url(./images/starwars.jpg);
+  background-image: repeat;
+}
+
+/* Styling för texter och länkar */
+h1 {
+  font-size: 90px;
+  max-width: 800px;
+  line-height: 100px;
+  text-align: center;
+  margin: 30px auto;
+  font-family: star jedi;
+  text-shadow: 0 0px 20px #fe859f;
+}
+
+h2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+h3 {
+  color: black;
+  font-size: 50px;
+  max-width: 800px;
+  line-height: 100px;
+  text-align: center;
+  margin: 30px 300px;
+  font-family: star jedi;
+  text-shadow: 0 0px 20px white;
+  
+}
+
+a {
+  color: #fe859f;
+  text-shadow: white;
+  border: rgb(252, 128, 149) solid;
+  border-radius: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px;
+  display: inline-block;
+  max-width: 90px;
+}
+
+
+
+a:hover {
+  text-shadow: 0 0 10px blue;
+  box-shadow: 0 0 10px blue;
+}
+
+
+/* Styling för alla produkter – dessa är children till
+sektionen med klassnamnet all-products */
+.product {
+  border: solid #fe859f 2px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px #FFE7E8;  
+}
+
+
+
+.product img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Sektionen .all-products är parent till div-arna med
+klassnamn .product. Den styr därmed hur alla produkterna
+ska vara placerade.
+Hint! Googla "flex-wrap".*/
+
+.all-products {
+  /* Här testar du dina flexbox-vingar. */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.all-products a {
+
+}
